@@ -1443,6 +1443,8 @@ body.cursor-hover .custom-cursor-ring {
 }
 
 .achievement-card {
+  flex: 0 0 min(540px, 90vw);
+  scroll-snap-align: start;
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
