@@ -1,335 +1,391 @@
 /**
- * =========================================================================
- * AMIR GIRGIS MOFID — PORTFOLIO CONTENT DATA
- * =========================================================================
- * All text content, links, metadata, and editable placeholders are stored here.
- * You can edit any text or values below without modifying HTML or CSS files.
+ * ============================================================
+ *  CONTENT.JS — Amir Girgis Mofid "Sunset Pop" Portfolio
+ *  Single source of truth for ALL page text and data.
+ *  Edit this file to update content; never touch layout files.
+ * ============================================================
  *
- * NOTE FOR AMIR:
- * Below are two placeholders requiring your exact input when available:
- * 1. TEAM_SIZE: Team size for Market Sphere X Agency (currently set to "[TEAM_SIZE]")
- * 2. TECHSKILLS_DATES: Exact dates for TechSkills Forum 2026 (currently set to "[TECHSKILLS_DATES]")
- * =========================================================================
+ *  ⚠️  TWO PLACEHOLDERS REQUIRE MANUAL EDITING BEFORE LAUNCH:
+ *
+ *  1. TEAM_SIZE  (search for [TEAM_SIZE])
+ *     ➜  Replace with the actual team headcount at Market Sphere X.
+ *        e.g. change "<!-- EDIT: team size, e.g. 8 --> [TEAM_SIZE]"
+ *             to "8 Members" (or whatever the real number is).
+ *
+ *  2. TECHSKILLS_DATES  (search for [TECHSKILLS_DATES])
+ *     ➜  Replace with the exact dates of TechSkills Forum 2026.
+ *        e.g. change "<!-- EDIT: exact dates of TechSkills Forum 2026 --> [TECHSKILLS_DATES]"
+ *             to "March 14–16, 2026" (or whatever the real dates are).
+ *
+ * ============================================================
  */
 
-window.PORTFOLIO_CONTENT = {
-  // --- METADATA & BRANDING ---
-  meta: {
-    siteTitle: "Amir Girgis Mofid | Software Development & Digital Marketing",
-    metaDescription: "Software Development Student (C# / ASP.NET Core) | Digital Marketing & AI Automation | Founder, Market Sphere X Agency. Builder at the intersection of code, marketing and leadership.",
-    author: "Amir Girgis Mofid",
-    location: "Giza, Egypt",
-    avatarPath: "assets/amir.jpg",
-    avatarAlt: "Portrait of Amir Girgis Mofid",
-    avatarFallbackInitials: "AG",
-    cvPath: "/Amir_Girgis_CV.pdf",
-    brandMark: "AGM"
-  },
+const CONTENT = {
 
-  // --- CONTACT & SOCIAL PROFILES ---
-  contact: {
-    email: "amirgargas28@gmail.com",
-    phone: "+20 122 364 6440",
-    location: "Giza, Egypt",
-    linkedin: {
-      url: "https://linkedin.com/in/amir-girgis-9392aa340",
-      display: "linkedin.com/in/amir-girgis-9392aa340"
-    },
-    github: {
-      url: "https://github.com/amir-girgis",
-      display: "github.com/amir-girgis"
+  /* ──────────────────────────────────────────────────────────
+   *  META — SEO, Open Graph, Twitter Card, JSON-LD
+   * ────────────────────────────────────────────────────────── */
+  meta: {
+    title: "Amir Girgis Mofid — Software Developer, Digital Marketer & Founder",
+    description:
+      "Portfolio of Amir Girgis Mofid: Software Development Student (C# / ASP.NET Core), Digital Marketer, AI Automation specialist and Founder of Market Sphere X Agency.",
+    ogImage: "/assets/og-image.jpg",
+    twitterCard: "summary_large_image",
+    twitterSite: "@amirgirgis",
+    twitterCreator: "@amirgirgis",
+
+    /**
+     * schema.org/Person — full JSON-LD object.
+     * Inject as <script type="application/ld+json"> in <head>.
+     */
+    jsonLdPerson: {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Amir Girgis Mofid",
+      "url": "https://amirgirgis.dev",
+      "image": "https://amirgirgis.dev/assets/amir.jpg",
+      "jobTitle": "Software Development Student & Founder",
+      "description":
+        "Software Development Student specialising in C# and ASP.NET Core, Digital Marketer, AI Automation specialist, and Founder of Market Sphere X Agency.",
+      "email": "amirgargas28@gmail.com",
+      "telephone": "+20 122 364 6440",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Giza",
+        "addressCountry": "EG"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "EVA International School of Applied Technology"
+      },
+      "sameAs": [
+        "https://linkedin.com/in/amir-girgis-9392aa340",
+        "https://github.com/amir-girgis"
+      ],
+      "knowsAbout": [
+        "C#",
+        "ASP.NET Core",
+        "Web Development",
+        "Digital Marketing",
+        "AI Automation",
+        "Brand Identity",
+        "Entrepreneurship"
+      ],
+      "award": [
+        "1st Place — Digital Marketing Competition, INNOVET III 2026",
+        "Winner — \"Discovering\" Challenge, TechSkills Forum 2026"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Founder & Team Leader",
+        "occupationLocation": {
+          "@type": "Country",
+          "name": "Egypt"
+        }
+      }
     }
   },
 
-  // --- NAVIGATION LINKS ---
-  navigation: [
-    { label: "Home", href: "#hero" },
-    { label: "About", href: "#about" },
-    { label: "Experience", href: "#experience" },
-    { label: "Projects", href: "#projects" },
-    { label: "Achievements", href: "#achievements" },
-    { label: "Volunteering", href: "#volunteering" },
-    { label: "Skills", href: "#skills" },
-    { label: "Education", href: "#education" },
-    { label: "Contact", href: "#contact" }
-  ],
+  /* ──────────────────────────────────────────────────────────
+   *  NAV
+   * ────────────────────────────────────────────────────────── */
+  nav: {
+    links: [
+      "About",
+      "Experience",
+      "Projects",
+      "Achievements",
+      "Volunteering",
+      "Skills",
+      "Education",
+      "Contact"
+    ]
+  },
 
-  // --- 1. HERO SECTION ---
+  /* ──────────────────────────────────────────────────────────
+   *  HERO
+   * ────────────────────────────────────────────────────────── */
   hero: {
-    badge: "Available for high-impact projects & collaborations",
-    greeting: "Hello, I am",
-    name: "Amir Girgis Mofid",
-    headline: "Software Development Student (C# / ASP.NET Core) | Digital Marketing & AI Automation | Founder, Market Sphere X",
-    valueStatement: "Builder at the intersection of code, marketing and leadership.",
-    ctas: {
-      primary: { label: "View Projects", href: "#projects" },
-      secondary: { label: "Download CV", href: "/Amir_Girgis_CV.pdf", isDownload: true },
-      tertiary: { label: "Contact Me", href: "#contact" }
-    },
-    quickMetrics: [
-      { value: 11, suffix: "", label: "Clients Served" },
-      { value: 60, suffix: "+", label: "Students Mentored" },
-      { value: 1, suffix: "st", label: "Place Winner INNOVET III" }
-    ]
-  },
-
-  // --- 2. ABOUT SECTION ---
-  about: {
-    sectionId: "about",
-    sectionNumber: "01",
-    tagline: "About Me",
-    title: "Bridging Engineering, Growth & Strategic Execution",
-    bio: [
-      "I am a software development student at EVA International School of Applied Technology, pursuing a Technical Diploma in Software Development (expected 2027) through a USAID-supported scholarship.",
-      "As the Founder & Team Leader of Market Sphere X Agency since March 2024, I lead a multidisciplinary team delivering web development, brand systems, social media growth, and AI-driven workflow automations for commercial clients, primarily real estate companies in Egypt.",
-      "I am passionate about entrepreneurship, modern technology, youth empowerment, and international cooperation. Whether architecting backend services in C# and ASP.NET Core, automating operational pipelines with AI, or mentoring emerging technical peers, I thrive at the convergence of technical engineering and business growth."
+    greeting: "Hey, I'm",
+    nameFirst: "Amir",
+    nameLast: "Girgis Mofid",
+    headline:
+      "Software Development Student (C# / ASP.NET Core) | Digital Marketing & AI Automation | Founder, Market Sphere X",
+    subtext:
+      "Builder at the intersection of code, marketing and leadership — building things that matter.",
+    cta: [
+      { label: "VIEW WORK",    href: "#projects" },
+      { label: "DOWNLOAD CV",  href: "/Amir_Girgis_CV.pdf" },
+      { label: "CONTACT ME",   href: "#contact" }
     ],
-    highlights: [
-      { label: "Scholarship", value: "USAID-Supported Technical Scholar" },
-      { label: "Education", value: "EVA International School (Exp. 2027)" },
-      { label: "Leadership", value: "Founder & Team Leader, Market Sphere X" },
-      { label: "Location", value: "Giza, Egypt" }
+    floatingChips: [
+      "C# / ASP.NET CORE",
+      "DIGITAL MARKETING",
+      "FOUNDER, MARKET SPHERE X",
+      "AI AUTOMATION",
+      "WEB DEVELOPMENT"
+    ],
+    rotatingBadgeText: "AVAILABLE FOR OPPORTUNITIES • FOUNDER • DEVELOPER •",
+    marqueeKeywords: [
+      "C#",
+      "ASP.NET CORE",
+      "DIGITAL MARKETING",
+      "AI AUTOMATION",
+      "WEB DEVELOPMENT",
+      "LEADERSHIP",
+      "ENTREPRENEURSHIP",
+      "BRAND IDENTITY",
+      "CREATIVE DIRECTION"
     ]
   },
 
-  // --- 3. EXPERIENCE SECTION ---
+  /* ──────────────────────────────────────────────────────────
+   *  ABOUT
+   * ────────────────────────────────────────────────────────── */
+  about: {
+    eyebrow: "01 — ABOUT",
+    bigStatement:
+      "I'm a software developer who thinks like a digital marketer, builds with AI automation, and leads as a founder — an entrepreneur who turns bold ideas into real products that move people.",
+    highlightedWords: [
+      "software developer",
+      "digital marketer",
+      "AI automation",
+      "founder"
+    ],
+    bento: [
+      { type: "stat",     value: "60+",       label: "Students Mentored" },
+      { type: "stat",     value: "11",        label: "Clients Served" },
+      { type: "award",    value: "1st Place", label: "INNOVET III 2026" },
+      { type: "award",    value: "Winner",    label: "TechSkills Forum 2026" },
+      { type: "location", city: "Giza, Egypt", clockLabel: "CAIRO" },
+      {
+        type:  "focus",
+        label: "Current Focus",
+        items: [
+          "C# & ASP.NET Core",
+          "AI Automation Pipelines",
+          "Brand Strategy",
+          "Scaling Market Sphere X"
+        ]
+      }
+    ]
+  },
+
+  /* ──────────────────────────────────────────────────────────
+   *  EXPERIENCE
+   * ────────────────────────────────────────────────────────── */
   experience: {
-    sectionId: "experience",
-    sectionNumber: "02",
-    tagline: "Experience",
-    title: "Agency Leadership & Academic Mentorship",
-    intro: "Hands-on team leadership delivering commercial web and automation solutions, paired with continuous technical mentorship.",
-    roles: [
+    eyebrow: "03 — EXPERIENCE",
+    items: [
       {
-        id: "market-sphere-x",
-        role: "Founder & Team Leader",
-        organization: "Market Sphere X Agency",
-        period: "March 2024 – Present",
-        location: "Egypt",
-        badge: "Agency Leadership",
-        summary: "Leads a cross-functional team (web development, graphic design, video production, photography, AI automation, business development, sales); delivers websites, branding, social media strategy and AI workflow automation for clients, mainly real estate companies in Egypt.",
-        metrics: [
-          { value: 11, suffix: "", label: "Clients Delivered" },
-          { value: "[TEAM_SIZE]", suffix: "", label: "Team Members", isPlaceholder: true }
-        ],
-        details: [
-          "Leads a cross-functional team across web development, graphic design, video production, photography, AI automation, business development, and sales.",
-          "Delivers end-to-end bespoke websites, brand identities, and data-driven social media growth strategies.",
-          "Architects custom AI workflow automations streamlining client operations and lead processing.",
-          "Focuses primarily on delivering measurable commercial value for real estate companies in Egypt.",
-          "Directly managed delivery and client relationships for 11 clients."
-        ],
-        skills: ["Web Development", "AI Automation", "Branding", "Social Media Strategy", "Team Leadership", "Business Development"]
+        role:        "Founder & Team Leader",
+        org:         "Market Sphere X Agency",
+        period:      "March 2024 – Present",
+        type:        "work",
+        description:
+          "Leads a cross-functional team covering web development, graphic design, video production, photography, AI automation, business development and sales. Delivers websites, branding, social media strategy and AI workflow automation for clients, primarily real estate companies in Egypt.",
+        highlights: [
+          "Team Size: <!-- EDIT: team size, e.g. 8 --> [TEAM_SIZE]",
+          "11 Clients",
+          "Web Dev · Branding · AI Automation · Social Media Strategy"
+        ]
       },
       {
-        id: "eva-mentorship",
-        role: "School Ambassador, PHP Team Leader, Peer Assistant & Student Professional Mentor",
-        organization: "EVA International School of Applied Technology",
-        period: "Ongoing Leadership Role",
-        location: "Giza, Egypt",
-        badge: "Mentorship & Ambassador",
-        summary: "Supports 60+ students in technical and professional development while serving as School Ambassador and PHP Team Leader.",
-        metrics: [
-          { value: 60, suffix: "+", label: "Students Mentored" }
-        ],
-        details: [
-          "Actively supports 60+ students in mastering software development fundamentals and professional growth.",
-          "Serves as PHP Team Leader, organizing structured code reviews, collaborative sprints, and peer debugging.",
-          "Represents the school community as official School Ambassador during key technical and institutional events.",
-          "Provides dedicated peer assistance and 1-on-1 technical guidance to foster student success."
-        ],
-        skills: ["Technical Mentorship", "PHP", "Peer Leadership", "Professional Coaching", "Student Empowerment"]
+        role:        "School Ambassador · PHP Team Leader · Peer Assistant · Student Professional Mentor",
+        org:         "EVA International School of Applied Technology",
+        period:      "Ongoing",
+        type:        "education-work",
+        description:
+          "Supports 60+ students in technical and professional development. Leads PHP team, assists peers and mentors fellow students in coding and career readiness.",
+        highlights: [
+          "60+ Students Mentored",
+          "Technical & Professional Development"
+        ]
       }
     ]
   },
 
-  // --- 4. PROJECTS SECTION ---
+  /* ──────────────────────────────────────────────────────────
+   *  PROJECTS
+   * ────────────────────────────────────────────────────────── */
   projects: {
-    sectionId: "projects",
-    sectionNumber: "03",
-    tagline: "Featured Projects",
-    title: "Engineered Automations & Strategic Platforms",
-    intro: "Real-world AI pipeline implementations, award-winning concept platforms, and backend engineering architectures.",
+    eyebrow: "04 — PROJECTS",
     items: [
       {
-        id: "ai-lead-qualification",
-        title: "AI Lead Qualification Platform",
-        category: "AI & Workflow Automation",
-        badge: "Autonomous Pipeline",
-        description: "An automated lead pipeline integrating Claude AI, Make, Airtable and Telegram via webhooks that scores and routes inbound leads, syncs CRM data and generates proposals/emails with one human approval step.",
-        keyPoints: [
-          "Integrates Claude AI, Make, Airtable, and Telegram via real-time webhooks",
-          "Automated scoring and dynamic routing of inbound prospective leads",
-          "Synchronizes lead metadata and status directly into centralized CRM tables",
-          "Drafts customized proposals and emails requiring only a single human approval step before dispatch"
-        ],
-        tools: ["Claude AI", "Make", "Airtable", "Telegram", "Webhooks", "CRM Sync", "Prompt Engineering"]
+        number:      "01",
+        category:    "AI & AUTOMATION",
+        title:       "AI Lead Qualification Platform",
+        description:
+          "An end-to-end pipeline integrating Claude AI, Make, Airtable and Telegram via webhooks. Automatically scores and routes inbound leads, syncs CRM data, and generates tailored proposals and emails — with one human approval step.",
+        tags:        ["Claude AI", "Make", "Airtable", "Telegram", "Webhooks", "REST APIs"],
+        gradient:    "blue-magenta"
       },
       {
-        id: "sakan-platform",
-        title: "SAKAN",
-        tagline: "Your Life, Your Way.",
-        category: "Platform Concept & Digital Strategy",
-        badge: "1st Place Winner – INNOVET III",
-        description: "A student-focused platform CONCEPT for students living away from their families, combining accommodation discovery and booking, study management, personal finance management, daily life organization and a proposed AI assistant.",
-        roleNote: "My Role: Concept & value proposition, audience analysis, digital marketing strategy, brand identity, social media campaigns, Instagram posts/stories/reels content, digital presence and final presentation. (Concept & Strategy only; software development of the app was not executed by me).",
-        keyPoints: [
-          "Developed full platform concept, value proposition, and user persona modeling for students away from family",
-          "Designed complete brand identity, visual communication standards, and typography hierarchy",
-          "Engineered the go-to-market digital marketing strategy and comprehensive audience analysis",
-          "Crafted high-impact social media campaign creative (Instagram reels, stories, and carousels)",
-          "Delivered winning championship presentation pitch securing 1st Place at INNOVET III"
+        number:      "02",
+        category:    "BRAND & MARKETING",
+        title:       "SAKAN — Your Life, Your Way.",
+        description:
+          "Student-focused platform CONCEPT combining accommodation discovery and booking, study management, personal finance management, daily life organization, and a proposed AI assistant — for students living away from their families. My role: concept and value proposition, audience analysis, digital marketing strategy, brand identity, social media campaigns (Instagram posts, stories, reels), digital presence and final presentation. Won 1st Place at INNOVET III.",
+        tags:        [
+          "Brand Identity",
+          "Digital Marketing",
+          "Social Media",
+          "Concept Strategy",
+          "Audience Analysis",
+          "Campaign Planning"
         ],
-        tools: ["Concept & Strategy", "Brand Identity", "Digital Marketing", "Social Media Strategy", "Audience Analysis", "INNOVET III Champion"]
+        gradient:    "magenta-orange",
+        award:       "1st Place — INNOVET III"
       },
       {
-        id: "more-projects-placeholder",
-        isPlaceholder: true,
-        title: "More projects coming soon",
-        tagline: "Active Development",
-        category: "Backend Engineering & AI Systems",
-        description: "Currently engineering enterprise backend services utilizing C# / ASP.NET Core Web APIs, Entity Framework Core, and next-generation autonomous AI workflow integrations. Production repositories will be linked as they go live.",
-        tools: ["C#", "ASP.NET Core", "Web API", "Entity Framework Core", "AI Automation"]
+        number:      "03",
+        category:    "COMING SOON",
+        title:       "More Projects Coming Soon",
+        description: "New work in progress. Check back soon.",
+        tags:        [],
+        gradient:    "neutral",
+        placeholder: true
       }
     ]
   },
 
-  // --- 5. ACHIEVEMENTS & AWARDS SECTION ---
+  /* ──────────────────────────────────────────────────────────
+   *  ACHIEVEMENTS
+   * ────────────────────────────────────────────────────────── */
   achievements: {
-    sectionId: "achievements",
-    sectionNumber: "04",
-    tagline: "Achievements & Awards",
-    title: "Recognitions & Competitive Milestones",
-    intro: "National and international honors in digital innovation, entrepreneurship, and technical excellence.",
+    eyebrow: "05 — ACHIEVEMENTS",
     items: [
       {
-        id: "innovet-iii",
-        isSpecialHighlight: true,
-        badge: "1st Place National Champion",
-        title: "1st Place – Digital Marketing Competition",
-        summit: "INNOVET III – TVET ReAImagined Innovation Summit",
-        date: "November 9, 2026",
-        organizers: "Organized by Egypt's Ministry of Education and Technical Education with GIZ, the European Union and the Swiss Agency for Development and Cooperation.",
-        teamMembers: ["Amir Girgis", "Keroles Ayman", "Ahmed Adel", "Mina Sameh"],
-        description: "Awarded first place across Egypt in the premier digital marketing championship at the INNOVET III Summit, presenting the SAKAN strategic concept and digital marketing framework before leading international development partners.",
-        tags: ["Ministry of Education", "GIZ", "European Union", "Swiss Agency for Development"]
+        rank:       "1ST PLACE",
+        title:      "Digital Marketing Competition",
+        event:      "INNOVET III – TVET ReAImagined Innovation Summit",
+        date:       "November 9, 2026",
+        organizers:
+          "Organized by Egypt's Ministry of Education and Technical Education with GIZ, the European Union and the Swiss Agency for Development and Cooperation.",
+        team:       ["Amir Girgis", "Keroles Ayman", "Ahmed Adel", "Mina Sameh"],
+        spotlight:  true
       },
       {
-        id: "techskills-forum",
-        isSpecialHighlight: false,
-        badge: "International Winner",
-        title: "Winner, 'Discovering' Challenge",
-        summit: "TechSkills Forum 2026 (Mediterranean TVET Forum, Inaugural Edition)",
-        location: "New Administrative Capital, Egypt",
-        datesPlaceholder: "[TECHSKILLS_DATES]",
-        dates: "[TECHSKILLS_DATES]",
-        description: "Won the 'Discovering' Challenge representing Egypt on an international team from Mediterranean countries at the inaugural Mediterranean TVET Forum, solving cross-border technical and innovation challenges.",
-        tags: ["TechSkills Forum", "Mediterranean Countries", "Cross-Border Team", "Innovation Challenge"]
+        rank:      "WINNER",
+        title:     "\"Discovering\" Challenge",
+        event:     "TechSkills Forum 2026 — Mediterranean TVET Forum (inaugural edition), New Administrative Capital, Egypt",
+        date:      "<!-- EDIT: exact dates of TechSkills Forum 2026 --> [TECHSKILLS_DATES] — EDIT THIS PLACEHOLDER",
+        note:      "Represented Egypt on an international team from Mediterranean countries.",
+        spotlight: false
       }
     ]
   },
 
-  // --- 6. VOLUNTEERING SECTION ---
+  /* ──────────────────────────────────────────────────────────
+   *  VOLUNTEERING
+   * ────────────────────────────────────────────────────────── */
   volunteering: {
-    sectionId: "volunteering",
-    sectionNumber: "05",
-    tagline: "Volunteering",
-    title: "Ecosystem Contribution & Deals Room Support",
-    intro: "Actively contributing to national entrepreneurship forums, investor deal flow, and bilingual technical collaboration.",
+    eyebrow: "06 — VOLUNTEERING",
     items: [
       {
-        id: "gef-2026",
-        role: "Volunteer – Digital Marketing Team & Deals Room Specialist",
-        event: "Global Entrepreneurship Festival (GEF) 2026",
-        location: "Cairo, Egypt",
-        dates: "November 6–8, 2026",
-        certificate: "Official Volunteer Certificate Received",
-        description: "Served on the Digital Marketing team and supported investors in the high-stakes Deals Room during the 3-day festival.",
-        responsibilities: [
-          "Supported active angel and institutional investors directly within the Deals Room",
-          "Explained founder projects, technical models, and business concepts to prospective investors",
-          "Coordinated and scheduled investor-founder pitch meetings and maintained strategic notes",
-          "Provided real-time English–Arabic translation during high-level venture discussions",
-          "Assisted in analyzing project strengths, market opportunities, and commercial risk factors",
-          "Logged deal statuses and recorded whether transactions reached an agreed deal in the official event form"
-        ],
-        tags: ["Investor Relations", "Deals Room", "Startup Evaluation", "English-Arabic Translation", "Certified Volunteer"]
+        role:        "Volunteer — Digital Marketing Team",
+        org:         "Global Entrepreneurship Festival (GEF) 2026",
+        location:    "Cairo, Egypt",
+        dates:       "November 6–8, 2026",
+        description:
+          "Supported investors in the Deals Room: explained projects, scheduled meetings, took notes, translated English–Arabic, helped assess each project's strengths and risks, and recorded in the event form whether a project reached a deal.",
+        certificate: "Official Volunteer Certificate received."
       }
     ]
   },
 
-  // --- 7. SKILLS SECTION ---
+  /* ──────────────────────────────────────────────────────────
+   *  SKILLS
+   * ────────────────────────────────────────────────────────── */
   skills: {
-    sectionId: "skills",
-    sectionNumber: "06",
-    tagline: "Technical & Professional Toolkit",
-    title: "Skills & Domain Competencies",
-    intro: "Transparently categorized technical capabilities, marketing proficiencies, and leadership competencies. No arbitrary progress bars.",
-    categories: [
+    eyebrow: "07 — SKILLS",
+    groups: [
       {
-        name: "Backend",
-        icon: "backend",
-        skills: ["C#", "ASP.NET Core", "Web API", "MVC", "Entity Framework Core", "LINQ", "SQL Server"]
+        label: "Backend",
+        items: ["C#", "ASP.NET Core", "Web API", "MVC", "Entity Framework Core", "LINQ", "SQL Server"]
       },
       {
-        name: "AI & Automation",
-        icon: "ai",
-        skills: ["Claude", "ChatGPT", "Prompt Engineering", "Make", "REST APIs", "Webhooks"]
+        label: "AI & Automation",
+        items: ["Claude", "ChatGPT", "Prompt Engineering", "Make", "REST APIs", "Webhooks"]
       },
       {
-        name: "Frontend & Design",
-        icon: "frontend",
-        skills: ["HTML", "CSS", "Figma"]
+        label: "Frontend & Design",
+        items: ["HTML", "CSS", "Figma"]
       },
       {
-        name: "Tools",
-        icon: "tools",
-        skills: ["Git", "GitHub", "Visual Studio"]
+        label: "Tools",
+        items: ["Git", "GitHub", "Visual Studio"]
       },
       {
-        name: "Digital Marketing",
-        icon: "marketing",
-        skills: ["Strategy", "Market Research", "Target Audience Analysis", "Social Media Marketing", "Content Strategy", "Campaign Planning", "SEO"]
+        label: "Digital Marketing",
+        items: [
+          "Strategy",
+          "Market Research",
+          "Target Audience Analysis",
+          "Social Media Marketing",
+          "Content Strategy",
+          "Campaign Planning",
+          "SEO"
+        ]
       },
       {
-        name: "Brand & Creative",
-        icon: "creative",
-        skills: ["Brand Identity", "Creative Direction", "Visual Communication"]
+        label: "Brand & Creative",
+        items: ["Brand Identity", "Creative Direction", "Visual Communication"]
       },
       {
-        name: "Professional",
-        icon: "professional",
-        skills: ["Team Leadership", "Collaboration", "Presentation", "Problem Solving"]
+        label: "Professional",
+        items: ["Team Leadership", "Collaboration", "Presentation", "Problem Solving"]
       }
     ]
   },
 
-  // --- 8. EDUCATION SECTION ---
+  /* ──────────────────────────────────────────────────────────
+   *  EDUCATION
+   * ────────────────────────────────────────────────────────── */
   education: {
-    sectionId: "education",
-    sectionNumber: "07",
-    tagline: "Education",
-    title: "Academic Foundation",
+    eyebrow:     "08 — EDUCATION",
+    degree:      "Technical Diploma in Software Development",
     institution: "EVA International School of Applied Technology",
-    degree: "Technical Diploma in Software Development",
-    expectedGraduation: "Expected 2027",
-    scholarship: "Studying through a USAID-supported scholarship",
-    description: "Rigorous applied technical curriculum focused on modern software engineering methodologies, backend development, system design, and practical industry standards under international scholarship standards."
+    expected:    "Expected 2027",
+    note:        "Studying through a USAID-supported scholarship."
   },
 
-  // --- 9. CONTACT SECTION ---
-  contactSection: {
-    sectionId: "contact",
-    sectionNumber: "08",
-    tagline: "Get in Touch",
-    title: "Let's Build Something Impactful",
-    intro: "Whether you need AI workflow automation, full-stack backend development, strategic digital marketing, or agency collaboration — feel free to reach out.",
-    formNote: "Submitting this form directly opens your default mail client with pre-filled details. No backend or third-party tracking required."
+  /* ──────────────────────────────────────────────────────────
+   *  CONTACT
+   * ────────────────────────────────────────────────────────── */
+  contact: {
+    eyebrow:  "09 — CONTACT",
+    headline: "LET'S BUILD SOMETHING IMPACTFUL",
+    subtext:  "Open to collaborations, projects and conversations.",
+    links: [
+      {
+        label:   "Email",
+        href:    "mailto:amirgargas28@gmail.com",
+        display: "amirgargas28@gmail.com"
+      },
+      {
+        label:   "LinkedIn",
+        href:    "https://linkedin.com/in/amir-girgis-9392aa340",
+        display: "linkedin.com/in/amir-girgis"
+      },
+      {
+        label:   "GitHub",
+        href:    "https://github.com/amir-girgis",
+        display: "github.com/amir-girgis"
+      }
+    ],
+    phone:      "+20 122 364 6440",
+    formAction: "mailto:amirgargas28@gmail.com"
   },
 
-  // --- FOOTER ---
+  /* ──────────────────────────────────────────────────────────
+   *  FOOTER
+   * ────────────────────────────────────────────────────────── */
   footer: {
-    copyright: "© 2026 Amir Girgis Mofid. Built with clean HTML, CSS & Vanilla JavaScript.",
-    quote: "Builder at the intersection of code, marketing and leadership."
+    name:       "AMIR GIRGIS MOFID",
+    clockLabel: "CAIRO",
+    backToTop:  "BACK TO TOP",
+    copyright:  "© 2026 Amir Girgis Mofid. All rights reserved."
   }
+
 };
