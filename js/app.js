@@ -50,7 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- 9. PHOTO FALLBACK INITIALS ---
   initPhotoFallbacks();
 
-  // --- 10. CONTACT FORM MAILTO & COPY ---
+  // --- 10. CV DOWNLOAD HANDLING (SUBPATH/ROOT RESILIENT) ---
+  initCvDownloadHandling();
+
+  // --- 11. CONTACT FORM MAILTO & COPY ---
   initContactForm(content);
 });
 
