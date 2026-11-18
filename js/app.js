@@ -168,16 +168,16 @@ function renderHero(hero, meta, contact) {
       <div class="portrait-container reveal-on-scroll delay-2">
         <div class="portrait-glow-ring"></div>
         <div class="portrait-frame">
+          <div class="avatar-fallback js-avatar-fallback">
+            <div class="avatar-fallback-initials">${escapeHtml(meta.avatarFallbackInitials)}</div>
+            <div class="avatar-fallback-sub">Amir Girgis</div>
+          </div>
           <img 
             src="${escapeHtml(meta.avatarPath)}" 
             alt="${escapeHtml(meta.avatarAlt)}" 
             class="portrait-img js-portrait-img"
-            onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';"
+            onerror="this.style.opacity='0'; this.style.pointerEvents='none';"
           />
-          <div class="avatar-fallback js-avatar-fallback" style="display:none;">
-            <div class="avatar-fallback-initials">${escapeHtml(meta.avatarFallbackInitials)}</div>
-            <div class="avatar-fallback-sub">Amir Girgis</div>
-          </div>
         </div>
 
         <div class="hero-floating-badge">
@@ -186,7 +186,7 @@ function renderHero(hero, meta, contact) {
           </div>
           <div>
             <div class="badge-info-title">Market Sphere X</div>
-            <div class="badge-info-sub">Founder & Team Leader</div>
+            <div class="badge-info-sub">Founder &amp; Team Leader</div>
           </div>
         </div>
       </div>
@@ -212,17 +212,20 @@ function renderAbout(about, meta) {
   container.innerHTML = `
     <div class="about-grid">
       <div class="about-visual reveal-on-scroll">
-        <div class="about-portrait-frame">
-          <img 
-            src="${escapeHtml(meta.avatarPath)}" 
-            alt="${escapeHtml(meta.avatarAlt)}" 
-            loading="lazy" 
-            class="portrait-img js-portrait-img"
-            onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';"
-          />
-          <div class="avatar-fallback js-avatar-fallback" style="display:none;">
-            <div class="avatar-fallback-initials">${escapeHtml(meta.avatarFallbackInitials)}</div>
-            <div class="avatar-fallback-sub">Amir Girgis Mofid</div>
+        <div class="about-portrait-wrapper">
+          <div class="about-glow-ring"></div>
+          <div class="about-portrait-frame">
+            <div class="avatar-fallback js-avatar-fallback">
+              <div class="avatar-fallback-initials">${escapeHtml(meta.avatarFallbackInitials)}</div>
+              <div class="avatar-fallback-sub">Amir Girgis Mofid</div>
+            </div>
+            <img 
+              src="${escapeHtml(meta.avatarPath)}" 
+              alt="${escapeHtml(meta.avatarAlt)}" 
+              loading="lazy" 
+              class="portrait-img js-portrait-img"
+              onerror="this.style.opacity='0'; this.style.pointerEvents='none';"
+            />
           </div>
         </div>
       </div>
@@ -360,7 +363,7 @@ function renderProjects(projects) {
  * 5. Render Achievements & Awards Section
  */
 function renderAchievements(achievements) {
-  const container = document.getElementById('achievements-grid-slot');
+  const container = document.getElementById('achievements-track-slot') || document.getElementById('achievements-grid-slot');
   if (!container) return;
 
   container.innerHTML = achievements.items.map((item, idx) => {
@@ -864,21 +867,26 @@ function animateCounter(el) {
 }
 
 /**
- * Horizontal timeline scroll controls
+ * Horizontal timeline scroll controls for Experience and Achievements
  */
 function initTimelineControls() {
-  const track = document.getElementById('experience-track-slot');
-  const prevBtn = document.getElementById('timeline-prev-btn');
-  const nextBtn = document.getElementById('timeline-next-btn');
+  setupScrollTrack('experience-track-slot', 'timeline-prev-btn', 'timeline-next-btn');
+  setupScrollTrack('achievements-track-slot', 'achievements-prev-btn', 'achievements-next-btn');
+}
+
+function setupScrollTrack(trackId, prevBtnId, nextBtnId) {
+  const track = document.getElementById(trackId);
+  const prevBtn = document.getElementById(prevBtnId);
+  const nextBtn = document.getElementById(nextBtnId);
 
   if (!track || !prevBtn || !nextBtn) return;
 
   prevBtn.addEventListener('click', () => {
-    track.scrollBy({ left: -400, behavior: 'smooth' });
+    track.scrollBy({ left: -440, behavior: 'smooth' });
   });
 
   nextBtn.addEventListener('click', () => {
-    track.scrollBy({ left: 400, behavior: 'smooth' });
+    track.scrollBy({ left: 440, behavior: 'smooth' });
   });
 }
 
@@ -934,6 +942,32 @@ function initPhotoFallbacks() {
         fallback.style.display = 'flex';
       }
     }
+  });
+}
+
+/**
+ * Resilient CV download handling across domain roots and subpaths (GitHub Pages / site previews)
+ */
+function initCvDownloadHandling() {
+  const cvLinks = document.querySelectorAll('a[href$="Amir_Girgis_CV.pdf"]');
+  cvLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const currentPath = window.location.pathname;
+      // If hosted in a subfolder like /site/xyz/ or /portfolio/
+      if (currentPath !== '/' && !currentPath.endsWith('/index.html')) {
+        const baseDir = currentPath.endsWith('/') ? currentPath : currentPath.substring(0, currentPath.lastIndexOf('/') + 1);
+        if (baseDir && baseDir !== '/') {
+          e.preventDefault();
+          const targetUrl = baseDir + 'Amir_Girgis_CV.pdf';
+          const dlAnchor = document.createElement('a');
+          dlAnchor.href = targetUrl;
+          dlAnchor.download = 'Amir_Girgis_CV.pdf';
+          document.body.appendChild(dlAnchor);
+          dlAnchor.click();
+          document.body.removeChild(dlAnchor);
+        }
+      }
+    });
   });
 }
 
