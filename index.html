@@ -221,7 +221,21 @@
           </p>
         </div>
 
-        <div class="achievements-grid" id="achievements-grid-slot">
+        <div class="timeline-nav-bar">
+          <span style="font-size:0.85rem; color:var(--text-muted); font-weight:500;">
+            ← Scroll horizontally to explore honors &amp; milestones →
+          </span>
+          <div class="timeline-nav-btns">
+            <button type="button" class="timeline-scroll-btn" id="achievements-prev-btn" aria-label="Scroll left in achievements timeline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button type="button" class="timeline-scroll-btn" id="achievements-next-btn" aria-label="Scroll right in achievements timeline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="horizontal-timeline-track" id="achievements-track-slot" tabindex="0" role="region" aria-label="Achievements timeline cards">
           <!-- Dynamic Content Injected from content.js -->
         </div>
       </div>
