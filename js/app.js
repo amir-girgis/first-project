@@ -169,6 +169,7 @@ function renderHero(hero, meta, contact) {
             src="${escapeHtml(meta.avatarPath)}" 
             alt="${escapeHtml(meta.avatarAlt)}" 
             class="portrait-img js-portrait-img"
+            onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';"
           />
           <div class="avatar-fallback js-avatar-fallback" style="display:none;">
             <div class="avatar-fallback-initials">${escapeHtml(meta.avatarFallbackInitials)}</div>
