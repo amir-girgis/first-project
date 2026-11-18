@@ -843,32 +843,38 @@ body.cursor-hover .custom-cursor-ring {
 .portrait-container {
   position: relative;
   width: min(380px, 90vw);
-  aspect-ratio: 1 / 1.15;
+  aspect-ratio: 1 / 1.18;
+  animation: portraitFloat 6s ease-in-out infinite alternate;
+}
+
+@keyframes portraitFloat {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-8px); }
 }
 
 .portrait-glow-ring {
   position: absolute;
-  inset: -12px;
-  border-radius: 40px;
-  background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-blue) 50%, var(--brand-mint) 100%);
-  filter: blur(24px);
-  opacity: 0.5;
+  inset: -14px;
+  border-radius: 200px 200px 42px 42px;
+  background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-blue) 45%, var(--brand-mint) 100%);
+  filter: blur(28px);
+  opacity: 0.55;
   z-index: 1;
   animation: glowPulse 6s infinite alternate ease-in-out;
 }
 
 @keyframes glowPulse {
-  0% { transform: scale(0.98); opacity: 0.4; }
-  100% { transform: scale(1.02); opacity: 0.65; }
+  0% { transform: scale(0.97); opacity: 0.45; }
+  100% { transform: scale(1.03); opacity: 0.7; }
 }
 
 .portrait-frame {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 36px;
+  border-radius: 190px 190px 36px 36px;
   overflow: hidden;
-  background: var(--bg-card);
+  background: linear-gradient(145deg, var(--brand-navy) 0%, var(--brand-navy-deep) 60%, #060B14 100%);
   border: 2px solid var(--border-medium);
   z-index: 2;
   box-shadow: var(--shadow-card);
@@ -880,15 +886,21 @@ body.cursor-hover .custom-cursor-ring {
 }
 
 .portrait-img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center top;
   display: block;
+  z-index: 2;
+  transition: opacity 0.3s ease;
 }
 
 /* Fallback Initials Avatar ("AG") */
 .avatar-fallback {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -897,7 +909,7 @@ body.cursor-hover .custom-cursor-ring {
   justify-content: center;
   background: linear-gradient(145deg, var(--brand-navy) 0%, var(--brand-navy-deep) 60%, #060B14 100%);
   color: #FFFFFF;
-  position: relative;
+  z-index: 1;
   user-select: none;
 }
 
@@ -987,15 +999,34 @@ body.cursor-hover .custom-cursor-ring {
   justify-content: center;
 }
 
-.about-portrait-frame {
+.about-portrait-wrapper {
+  position: relative;
   width: min(340px, 85vw);
   aspect-ratio: 1 / 1.2;
-  border-radius: 32px;
+  animation: portraitFloat 7s ease-in-out infinite alternate-reverse;
+}
+
+.about-glow-ring {
+  position: absolute;
+  inset: -14px;
+  border-radius: 190px 190px 42px 42px;
+  background: linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-blue) 45%, var(--brand-mint) 100%);
+  filter: blur(26px);
+  opacity: 0.5;
+  z-index: 1;
+  animation: glowPulse 7s infinite alternate ease-in-out;
+}
+
+.about-portrait-frame {
+  width: 100%;
+  height: 100%;
+  border-radius: 180px 180px 36px 36px;
   overflow: hidden;
-  background: var(--bg-card);
+  background: linear-gradient(145deg, var(--brand-navy) 0%, var(--brand-navy-deep) 60%, #060B14 100%);
   border: 2px solid var(--border-medium);
   box-shadow: var(--shadow-card);
   position: relative;
+  z-index: 2;
 }
 
 .about-content {
