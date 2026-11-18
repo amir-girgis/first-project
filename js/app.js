@@ -176,7 +176,7 @@ function renderHero(hero, meta, contact) {
             src="${escapeHtml(meta.avatarPath)}" 
             alt="${escapeHtml(meta.avatarAlt)}" 
             class="portrait-img js-portrait-img"
-            onerror="this.style.opacity='0'; this.style.pointerEvents='none';"
+            onerror="this.style.display='none';"
           />
         </div>
 
@@ -224,7 +224,7 @@ function renderAbout(about, meta) {
               alt="${escapeHtml(meta.avatarAlt)}" 
               loading="lazy" 
               class="portrait-img js-portrait-img"
-              onerror="this.style.opacity='0'; this.style.pointerEvents='none';"
+              onerror="this.style.display='none';"
             />
           </div>
         </div>
