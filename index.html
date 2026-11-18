@@ -1,45 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amir Girgis Mofid | Software Development & Digital Marketing</title>
-  
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Software Development Student (C# / ASP.NET Core) | Digital Marketing & AI Automation | Founder, Market Sphere X Agency. Builder at the intersection of code, marketing and leadership.">
-  <meta name="author" content="Amir Girgis Mofid">
-  <meta name="keywords" content="Amir Girgis Mofid, Software Development, C#, ASP.NET Core, Digital Marketing, AI Automation, Market Sphere X, Egypt">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Amir Girgis Mofid | Software Development & Digital Marketing">
-  <meta property="og:description" content="Software Development Student (C# / ASP.NET Core) | Digital Marketing & AI Automation | Founder, Market Sphere X Agency.">
-  <meta property="og:image" content="assets/amir.jpg">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title data-content-key="meta.title">Amir Girgis Mofid — Software Developer &amp; Digital Marketer</title>
+  <meta name="description" data-content-key="meta.description" content="Software Development Student (C# / ASP.NET Core), Digital Marketer, AI Automation specialist, and Founder of Market Sphere X Agency." />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Amir Girgis Mofid" />
+  <link rel="canonical" href="https://amirgirgismofid.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://amirgirgismofid.com/" />
+  <meta property="og:title" data-content-key="meta.title" content="Amir Girgis Mofid — Software Developer &amp; Digital Marketer" />
+  <meta property="og:description" data-content-key="meta.description" content="Software Development Student (C# / ASP.NET Core), Digital Marketer, AI Automation specialist, and Founder of Market Sphere X Agency." />
+  <meta property="og:image" data-content-key="meta.ogImage" content="/assets/og-image.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:site_name" content="Amir Girgis Mofid Portfolio" />
+
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Amir Girgis Mofid | Software Development & Digital Marketing">
-  <meta name="twitter:description" content="Software Development Student (C# / ASP.NET Core) | Digital Marketing & AI Automation | Founder, Market Sphere X.">
-  <meta name="twitter:image" content="assets/amir.jpg">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" data-content-key="meta.title" content="Amir Girgis Mofid — Software Developer &amp; Digital Marketer" />
+  <meta name="twitter:description" data-content-key="meta.description" content="Software Development Student (C# / ASP.NET Core), Digital Marketer, AI Automation specialist, and Founder of Market Sphere X Agency." />
+  <meta name="twitter:image" data-content-key="meta.ogImage" content="/assets/og-image.jpg" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-
-  <!-- Google Fonts: Space Grotesk + Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Structured Data: Person Schema -->
-  <script type="application/ld+json">
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json" id="json-ld-person">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Amir Girgis Mofid",
-    "jobTitle": "Software Development Student & Agency Founder",
+    "url": "https://amirgirgismofid.com",
+    "image": "https://amirgirgismofid.com/assets/amir.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/amir-girgis/",
+      "https://github.com/amirgirgis"
+    ],
+    "jobTitle": "Software Development Student & Founder",
     "worksFor": {
       "@type": "Organization",
       "name": "Market Sphere X Agency"
@@ -51,310 +50,1140 @@
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Giza",
-      "addressCountry": "Egypt"
+      "addressCountry": "EG"
     },
-    "email": "mailto:amirgargas28@gmail.com",
-    "telephone": "+201223646440",
-    "sameAs": [
-      "https://linkedin.com/in/amir-girgis-9392aa340",
-      "https://github.com/amir-girgis"
-    ]
+    "email": "amirgargas28@gmail.com",
+    "knowsAbout": ["C#", "ASP.NET Core", "Digital Marketing", "AI Automation", "Web Development", "Brand Strategy"]
   }
   </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Font Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- No-JS Fallback -->
+  <noscript>
+    <style>
+      #loader { display: none !important; }
+      .skip-link { position: static !important; clip: auto !important; width: auto !important; height: auto !important; }
+      #cursor, #cursor-dot { display: none !important; }
+    </style>
+  </noscript>
 </head>
 <body>
-  <!-- Accessible Skip Link -->
-  <a href="#hero" class="skip-link">Skip to main content</a>
 
-  <!-- Desktop Custom Cursor -->
-  <div class="custom-cursor-dot" aria-hidden="true"></div>
-  <div class="custom-cursor-ring" aria-hidden="true"></div>
+  <!-- Skip to Main Content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Background Ambiance -->
-  <div class="bg-ambient-layer" aria-hidden="true">
-    <div class="ambient-orb ambient-orb-1"></div>
-    <div class="ambient-orb ambient-orb-2"></div>
-    <div class="ambient-orb ambient-orb-3"></div>
+  <!-- ═══════════════════════════════════════════════════
+       LOADER
+  ═══════════════════════════════════════════════════ -->
+  <div id="loader" role="status" aria-label="Loading portfolio" aria-live="polite">
+    <div class="loader-inner">
+      <p class="loader-name" aria-label="Amir Girgis">
+        <span class="loader-letter" aria-hidden="true">A</span>
+        <span class="loader-letter" aria-hidden="true">M</span>
+        <span class="loader-letter" aria-hidden="true">I</span>
+        <span class="loader-letter" aria-hidden="true">R</span>
+        <span class="loader-space" aria-hidden="true">&nbsp;</span>
+        <span class="loader-letter" aria-hidden="true">G</span>
+        <span class="loader-letter" aria-hidden="true">I</span>
+        <span class="loader-letter" aria-hidden="true">R</span>
+        <span class="loader-letter" aria-hidden="true">G</span>
+        <span class="loader-letter" aria-hidden="true">I</span>
+        <span class="loader-letter" aria-hidden="true">S</span>
+      </p>
+      <div class="loader-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="loader-bar-fill"></div>
+      </div>
+    </div>
+    <button class="loader-skip" id="loader-skip-btn" aria-label="Skip intro animation">Skip</button>
   </div>
-  <div class="bg-grid-overlay" aria-hidden="true"></div>
 
-  <!-- Navigation Bar -->
-  <header class="navbar" role="banner">
-    <div class="container nav-container">
-      <a href="#hero" class="brand-logo" aria-label="Amir Girgis Mofid Portfolio Home">
-        <span class="brand-badge">AGM</span>
-        <div class="brand-name">
-          <span class="brand-name-text">Amir Girgis</span>
-          <span class="brand-subtext">Builder &amp; Founder</span>
-        </div>
+  <!-- ═══════════════════════════════════════════════════
+       CUSTOM CURSOR (desktop only)
+  ═══════════════════════════════════════════════════ -->
+  <div id="cursor" aria-hidden="true"></div>
+  <div id="cursor-dot" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner" data-scrolled="false">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <!-- Logo / Initials -->
+      <a href="#hero" class="nav-logo" aria-label="Amir Girgis Mofid — Back to top">
+        <span class="nav-logo-initials" aria-hidden="true">AG</span>
       </a>
 
       <!-- Desktop Nav Links -->
-      <nav class="nav-desktop" aria-label="Main Navigation">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#achievements" class="nav-link">Achievements</a>
-        <a href="#volunteering" class="nav-link">Volunteering</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
+      <ul class="nav-links" role="list">
+        <li><a href="#about"         class="nav-link" data-content-key="nav.links.0">About</a></li>
+        <li><a href="#experience"    class="nav-link" data-content-key="nav.links.1">Experience</a></li>
+        <li><a href="#projects"      class="nav-link" data-content-key="nav.links.2">Projects</a></li>
+        <li><a href="#achievements"  class="nav-link" data-content-key="nav.links.3">Achievements</a></li>
+        <li><a href="#volunteering"  class="nav-link" data-content-key="nav.links.4">Volunteering</a></li>
+        <li><a href="#skills"        class="nav-link" data-content-key="nav.links.5">Skills</a></li>
+        <li><a href="#education"     class="nav-link" data-content-key="nav.links.6">Education</a></li>
+        <li><a href="#contact"       class="nav-link" data-content-key="nav.links.7">Contact</a></li>
+      </ul>
 
-      <!-- Actions: Theme Toggle & Mobile Hamburger -->
-      <div class="nav-actions">
-        <button type="button" class="theme-toggle-btn js-theme-toggle" aria-label="Toggle theme">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        </button>
-
-        <button type="button" class="nav-toggle-btn" id="mobileNavToggle" aria-label="Open mobile menu" aria-expanded="false" aria-controls="mobileDrawer">
-          <span></span>
-          <span></span>
-          <span></span>
+      <!-- Right Controls -->
+      <div class="nav-controls">
+        <button
+          id="theme-toggle"
+          class="theme-toggle-btn"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+        >
+          <!-- Moon icon (shown in light mode) -->
+          <svg class="icon-moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/>
+          </svg>
+          <!-- Sun icon (shown in dark mode) -->
+          <svg class="icon-sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
         </button>
       </div>
-    </div>
+    </nav>
+
+    <!-- Mobile Bottom Nav -->
+    <nav class="nav-mobile" aria-label="Mobile navigation">
+      <ul class="nav-mobile-links" role="list">
+        <li>
+          <a href="#about" class="nav-mobile-link" aria-label="About">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span>About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-mobile-link" aria-label="Projects">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="nav-mobile-link" aria-label="Skills">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <span>Skills</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-mobile-link" aria-label="Contact">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Mobile Drawer Menu -->
-  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
-    <nav class="mobile-nav-list">
-      <a href="#hero" class="mobile-nav-link">Home</a>
-      <a href="#about" class="mobile-nav-link">About</a>
-      <a href="#experience" class="mobile-nav-link">Experience</a>
-      <a href="#projects" class="mobile-nav-link">Projects</a>
-      <a href="#achievements" class="mobile-nav-link">Achievements</a>
-      <a href="#volunteering" class="mobile-nav-link">Volunteering</a>
-      <a href="#skills" class="mobile-nav-link">Skills</a>
-      <a href="#education" class="mobile-nav-link">Education</a>
-      <a href="#contact" class="mobile-nav-link">Contact</a>
-    </nav>
-    <div class="mobile-nav-actions">
-      <a href="Amir_Girgis_CV.pdf" download="Amir_Girgis_CV.pdf" class="btn btn-secondary">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        <span>Download CV</span>
-      </a>
-      <a href="#contact" class="btn btn-accent">Contact Me</a>
-    </div>
-  </aside>
-
-  <!-- Main Content Areas (in exact requested order) -->
+  <!-- ═══════════════════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════════════════ -->
   <main id="main-content">
-    
-    <!-- 1. HERO SECTION -->
-    <section id="hero" class="hero-section" aria-label="Introduction and Hero">
-      <div class="container">
-        <div class="hero-grid">
-          <div id="hero-content-slot">
-            <!-- Dynamic Content Injected from content.js -->
+
+    <!-- ─────────────────────────────────────────────
+         HERO
+    ───────────────────────────────────────────── -->
+    <section id="hero" aria-label="Hero — Introduction">
+
+      <!-- Gradient Mesh Background Orbs -->
+      <div class="orb-field" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+        <div class="orb orb-6"></div>
+      </div>
+
+      <div class="hero-layout">
+
+        <!-- Portrait Column -->
+        <div class="hero-portrait-column">
+          <!-- Gradient ring glow behind portrait -->
+          <div class="portrait-glow" aria-hidden="true"></div>
+
+          <!-- Portrait Container with arch clip -->
+          <div class="hero-portrait">
+            <img
+              src="assets/amir.jpg"
+              alt="Portrait of Amir Girgis Mofid"
+              width="400"
+              height="480"
+              loading="eager"
+              decoding="async"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <!-- Fallback if image fails to load -->
+            <div class="portrait-fallback" aria-label="Initials: AG" style="display:none;">
+              <span aria-hidden="true">AG</span>
+            </div>
           </div>
-          <div id="hero-portrait-slot" class="hero-visual-wrapper">
-            <!-- Dynamic Portrait Injected from content.js -->
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- 2. ABOUT SECTION -->
-    <section id="about" class="section" aria-label="About Amir Girgis Mofid">
-      <div class="container" id="about-content-slot">
-        <!-- Dynamic Content Injected from content.js -->
-      </div>
-    </section>
-
-    <!-- 3. EXPERIENCE SECTION -->
-    <section id="experience" class="section" aria-label="Professional Experience and Leadership">
-      <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <div class="section-tagline">Experience</div>
-          <h2 class="section-title">Leadership &amp; Technical Mentorship</h2>
-          <p class="section-description">
-            Hands-on team leadership delivering commercial web and automation solutions, paired with continuous technical mentorship.
-          </p>
-        </div>
-
-        <div class="timeline-nav-bar">
-          <span style="font-size:0.85rem; color:var(--text-muted); font-weight:500;">
-            ← Scroll horizontally to explore timeline →
-          </span>
-          <div class="timeline-nav-btns">
-            <button type="button" class="timeline-scroll-btn" id="timeline-prev-btn" aria-label="Scroll left in experience timeline">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-            </button>
-            <button type="button" class="timeline-scroll-btn" id="timeline-next-btn" aria-label="Scroll right in experience timeline">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-            </button>
-          </div>
-        </div>
-
-        <div class="horizontal-timeline-track" id="experience-track-slot" tabindex="0" role="region" aria-label="Experience timeline cards">
-          <!-- Dynamic Content Injected from content.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. PROJECTS SECTION -->
-    <section id="projects" class="section" aria-label="Featured Projects">
-      <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <div class="section-tagline">Featured Projects</div>
-          <h2 class="section-title">Engineered Automations &amp; Platforms</h2>
-          <p class="section-description">
-            Real-world AI pipeline implementations, award-winning concept platforms, and backend engineering architectures.
-          </p>
-        </div>
-
-        <div class="projects-grid" id="projects-grid-slot">
-          <!-- Dynamic Content Injected from content.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. ACHIEVEMENTS & AWARDS SECTION -->
-    <section id="achievements" class="section" aria-label="Achievements and Honors">
-      <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <div class="section-tagline">Achievements &amp; Awards</div>
-          <h2 class="section-title">Competitive Milestones &amp; Honors</h2>
-          <p class="section-description">
-            National and international honors in digital innovation, entrepreneurship, and technical excellence.
-          </p>
-        </div>
-
-        <div class="timeline-nav-bar">
-          <span style="font-size:0.85rem; color:var(--text-muted); font-weight:500;">
-            ← Scroll horizontally to explore honors &amp; milestones →
-          </span>
-          <div class="timeline-nav-btns">
-            <button type="button" class="timeline-scroll-btn" id="achievements-prev-btn" aria-label="Scroll left in achievements timeline">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-            </button>
-            <button type="button" class="timeline-scroll-btn" id="achievements-next-btn" aria-label="Scroll right in achievements timeline">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-            </button>
+          <!-- Rotating Badge SVG -->
+          <div class="rotating-badge" aria-label="Available for opportunities — Founder — Developer">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <defs>
+                <path id="badge-circle" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
+              </defs>
+              <text class="badge-text">
+                <textPath href="#badge-circle" startOffset="0%" data-content-key="hero.rotatingBadgeText">
+                  AVAILABLE FOR OPPORTUNITIES • FOUNDER • DEVELOPER •
+                </textPath>
+              </text>
+              <!-- Center star/logo mark -->
+              <circle cx="100" cy="100" r="22" class="badge-center-circle" />
+              <text x="100" y="107" text-anchor="middle" class="badge-center-text" aria-hidden="true">★</text>
+            </svg>
           </div>
         </div>
 
-        <div class="horizontal-timeline-track" id="achievements-track-slot" tabindex="0" role="region" aria-label="Achievements timeline cards">
-          <!-- Dynamic Content Injected from content.js -->
-        </div>
-      </div>
-    </section>
+        <!-- Text Column -->
+        <div class="hero-text-column">
 
-    <!-- 6. VOLUNTEERING SECTION -->
-    <section id="volunteering" class="section" aria-label="Volunteering and Community Leadership">
-      <div class="container">
-        <div class="section-header reveal-on-scroll" style="text-align:center; max-width:680px; margin-left:auto; margin-right:auto;">
-          <div class="section-tagline">Volunteering</div>
-          <h2 class="section-title">Ecosystem Contribution &amp; Deals Room Support</h2>
-          <p class="section-description">
-            Actively contributing to national entrepreneurship forums, investor deal flow, and bilingual technical collaboration.
+          <!-- Greeting (outline style) -->
+          <p class="hero-greeting" data-content-key="hero.greeting" aria-hidden="true">Hey, I'm</p>
+
+          <!-- Name -->
+          <h1 class="hero-name" aria-label="Amir Girgis Mofid">
+            <span class="hero-name-first" data-content-key="hero.nameFirst">Amir</span>
+            <br aria-hidden="true" />
+            <span class="hero-name-last" data-content-key="hero.nameLast">Girgis Mofid</span>
+          </h1>
+
+          <!-- Headline -->
+          <p class="hero-headline" data-content-key="hero.headline">
+            Software Development Student (C# / ASP.NET Core) | Digital Marketing &amp; AI Automation | Founder, Market Sphere X
           </p>
-        </div>
 
-        <div class="volunteering-container" id="volunteering-slot">
-          <!-- Dynamic Content Injected from content.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. SKILLS SECTION -->
-    <section id="skills" class="section" aria-label="Skills and Technical Proficiencies">
-      <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <div class="section-tagline">Skills &amp; Capabilities</div>
-          <h2 class="section-title">Technical &amp; Professional Toolkit</h2>
-          <p class="section-description">
-            Transparently categorized technical capabilities, marketing proficiencies, and leadership competencies. No arbitrary progress bars.
+          <!-- Subtext -->
+          <p class="hero-subtext" data-content-key="hero.subtext">
+            Builder at the intersection of code, marketing and leadership — building things that matter.
           </p>
-        </div>
 
-        <div class="skills-grid" id="skills-grid-slot">
-          <!-- Dynamic Content Injected from content.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- 8. EDUCATION SECTION -->
-    <section id="education" class="section" aria-label="Education and Academic Credentials">
-      <div class="container">
-        <div class="section-header reveal-on-scroll" style="text-align:center; max-width:680px; margin-left:auto; margin-right:auto;">
-          <div class="section-tagline">Education</div>
-          <h2 class="section-title">Academic Foundation</h2>
-        </div>
-
-        <div class="education-container" id="education-slot">
-          <!-- Dynamic Content Injected from content.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- 9. CONTACT SECTION -->
-    <section id="contact" class="section" aria-label="Contact Information and Direct Message">
-      <div class="container">
-        <div class="section-header reveal-on-scroll">
-          <div class="section-tagline">Get In Touch</div>
-          <h2 class="section-title">Let's Build Something Impactful</h2>
-          <p class="section-description">
-            Whether you need AI workflow automation, full-stack backend development, strategic digital marketing, or agency collaboration — feel free to reach out.
-          </p>
-        </div>
-
-        <div class="contact-grid">
-          <!-- Direct Contact Information Cards -->
-          <div class="contact-info-col reveal-on-scroll" id="contact-info-slot">
-            <!-- Dynamic Content Injected from content.js -->
+          <!-- CTA Buttons -->
+          <div class="hero-cta" role="group" aria-label="Call to action">
+            <a href="#projects" class="btn btn-primary" data-content-key="hero.cta.0.label">
+              <span>VIEW WORK</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="/Amir_Girgis_CV.pdf" class="btn btn-secondary" download data-content-key="hero.cta.1.label">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>DOWNLOAD CV</span>
+            </a>
+            <a href="#contact" class="btn btn-outline" data-content-key="hero.cta.2.label">
+              <span>CONTACT ME</span>
+            </a>
           </div>
 
-          <!-- Direct mailto Contact Form -->
-          <div class="contact-form-wrapper reveal-on-scroll delay-1">
-            <h3 style="font-size:1.3rem; margin-bottom:12px;">Send a Direct Message</h3>
-            <p style="font-size:0.88rem; color:var(--text-secondary); margin-bottom:20px;">
-              Submitting opens your default email client with your pre-formatted message. No backend servers or third-party forms required.
+          <!-- Floating Chips -->
+          <div class="floating-chips" aria-label="Key expertise areas">
+            <div class="floating-chip chip-1" data-content-key="hero.floatingChips.0">C# / ASP.NET CORE</div>
+            <div class="floating-chip chip-2" data-content-key="hero.floatingChips.1">DIGITAL MARKETING</div>
+            <div class="floating-chip chip-3" data-content-key="hero.floatingChips.2">FOUNDER, MARKET SPHERE X</div>
+            <div class="floating-chip chip-4" data-content-key="hero.floatingChips.3">AI AUTOMATION</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator" aria-label="Scroll down to explore">
+        <span class="scroll-indicator-text">Scroll</span>
+        <div class="scroll-indicator-line" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+         MARQUEE BAND
+    ───────────────────────────────────────────── -->
+    <div class="marquee-band" aria-label="Skills marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span class="marquee-item" data-content-key="hero.marqueeKeywords.0">C#</span>
+          <span class="marquee-sep" aria-hidden="true">★</span>
+          <span class="marquee-item" data-content-key="hero.marqueeKeywords.1">ASP.NET CORE</span>
+          <span class="marquee-sep" aria-hidden="true">★</span>
+          <span class="marquee-item" data-content-key="hero.marqueeKeywords.2">DIGITAL MARKETING</span>
+          <span class="marquee-sep" aria-hidden="true">★</span>
+          <span class="marquee-item" data-content-key="hero.marqueeKeywords.3">AI AUTOMATION</span>
+          <span class="marquee-sep" aria-hidden="true">★</span>
+          <span class="marquee-item" data-content-key="hero.marqueeKeywords.4">WEB DEVELOPMENT</span>
+          <span class="marquee-sep" aria-hidden="true">★</span>
+          <span class="marquee-item" data-content-key="hero.marqueeKeywords.5">LEADERSHIP</span>
+          <span class="marquee-sep" aria-hidden="true">★</span>
+          <span class="marquee-item" data-content-key="hero.marqueeKeywords.6">ENTREPRENEURSHIP</span>
+          <span class="marquee-sep" aria-hidden="true">★</span>
+          <span class="marquee-item" data-content-key="hero.marqueeKeywords.7">BRAND IDENTITY</span>
+          <span class="marquee-sep" aria-hidden="true">★</span>
+          <span class="marquee-item" data-content-key="hero.marqueeKeywords.8">CREATIVE DIRECTION</span>
+          <span class="marquee-sep" aria-hidden="true">★</span>
+        </div>
+        <!-- Duplicate for seamless loop -->
+        <div class="marquee-content" aria-hidden="true">
+          <span class="marquee-item">C#</span>
+          <span class="marquee-sep">★</span>
+          <span class="marquee-item">ASP.NET CORE</span>
+          <span class="marquee-sep">★</span>
+          <span class="marquee-item">DIGITAL MARKETING</span>
+          <span class="marquee-sep">★</span>
+          <span class="marquee-item">AI AUTOMATION</span>
+          <span class="marquee-sep">★</span>
+          <span class="marquee-item">WEB DEVELOPMENT</span>
+          <span class="marquee-sep">★</span>
+          <span class="marquee-item">LEADERSHIP</span>
+          <span class="marquee-sep">★</span>
+          <span class="marquee-item">ENTREPRENEURSHIP</span>
+          <span class="marquee-sep">★</span>
+          <span class="marquee-item">BRAND IDENTITY</span>
+          <span class="marquee-sep">★</span>
+          <span class="marquee-item">CREATIVE DIRECTION</span>
+          <span class="marquee-sep">★</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─────────────────────────────────────────────
+         ABOUT
+    ───────────────────────────────────────────── -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="section-inner">
+
+        <!-- Section Eyebrow -->
+        <div class="section-eyebrow" aria-label="Section 01 — About">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          <span class="eyebrow-label" data-content-key="about.eyebrow">01 — ABOUT</span>
+        </div>
+
+        <!-- Oversized background number -->
+        <span class="section-bg-number" aria-hidden="true">01</span>
+
+        <div class="about-layout">
+          <div class="about-text">
+            <h2 id="about-heading" class="section-heading">About Me</h2>
+
+            <!-- Big statement with highlighted keywords -->
+            <p class="about-statement" data-content-key="about.bigStatement">
+              I'm a <mark class="highlight" data-content-key="about.highlightedWords.0">software developer</mark> and
+              <mark class="highlight" data-content-key="about.highlightedWords.1">digital marketer</mark> who harnesses
+              <mark class="highlight" data-content-key="about.highlightedWords.2">AI automation</mark> to build smarter
+              systems — and as a <mark class="highlight" data-content-key="about.highlightedWords.3">founder</mark>,
+              I turn that intersection into real impact for real clients.
             </p>
 
-            <form id="contactForm" class="contact-form">
-              <div class="form-group">
-                <label for="contactName" class="form-label">Your Name</label>
-                <input type="text" id="contactName" class="form-input" placeholder="e.g. Sarah Jenkins" required>
-              </div>
-
-              <div class="form-group">
-                <label for="contactEmail" class="form-label">Your Email</label>
-                <input type="email" id="contactEmail" class="form-input" placeholder="e.g. sarah@example.com" required>
-              </div>
-
-              <div class="form-group">
-                <label for="contactSubject" class="form-label">Subject</label>
-                <input type="text" id="contactSubject" class="form-input" placeholder="e.g. Project Inquiry / Collaboration" required>
-              </div>
-
-              <div class="form-group">
-                <label for="contactMessage" class="form-label">Message</label>
-                <textarea id="contactMessage" class="form-textarea" placeholder="Tell me about your project, timeline, or goals..." required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-accent" style="width:100%; margin-top:8px;">
-                <span>Send via Email Client</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-              </button>
-
-              <div id="formStatusMsg" style="display:none; font-size:0.85rem; margin-top:10px; font-weight:600;"></div>
-            </form>
+            <p class="about-body">
+              Based in Giza, Egypt, I study at EVA International School of Applied Technology
+              while running Market Sphere X Agency — serving 11+ clients with web development,
+              branding, social media strategy, and AI workflow automation. I mentor 60+ peers
+              and compete, winning 1st place at INNOVET III 2026.
+            </p>
           </div>
+
+          <!-- Portrait Thumbnail -->
+          <div class="about-portrait-wrap">
+            <div class="about-portrait">
+              <img
+                src="assets/amir.jpg"
+                alt="Amir Girgis Mofid — profile photo"
+                width="260"
+                height="310"
+                loading="lazy"
+                decoding="async"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <div class="portrait-fallback" aria-label="Initials: AG" style="display:none;">
+                <span aria-hidden="true">AG</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento Grid -->
+        <div class="bento-grid" aria-label="Quick facts">
+
+          <!-- Stat: Students Mentored -->
+          <div class="bento-tile bento-stat bento-stat--large" role="figure" aria-label="60 plus students mentored">
+            <span class="bento-value" data-content-key="about.bento.0.value">60+</span>
+            <span class="bento-label" data-content-key="about.bento.0.label">Students Mentored</span>
+          </div>
+
+          <!-- Stat: Clients Served -->
+          <div class="bento-tile bento-stat" role="figure" aria-label="11 clients served">
+            <span class="bento-value" data-content-key="about.bento.1.value">11</span>
+            <span class="bento-label" data-content-key="about.bento.1.label">Clients Served</span>
+          </div>
+
+          <!-- Award: 1st Place -->
+          <div class="bento-tile bento-award bento-award--gold" role="figure" aria-label="1st Place — INNOVET III 2026">
+            <span class="bento-award-icon" aria-hidden="true">🏆</span>
+            <span class="bento-value" data-content-key="about.bento.2.value">1st Place</span>
+            <span class="bento-label" data-content-key="about.bento.2.label">INNOVET III 2026</span>
+          </div>
+
+          <!-- Award: Winner -->
+          <div class="bento-tile bento-award bento-award--blue" role="figure" aria-label="Winner — TechSkills Forum 2026">
+            <span class="bento-award-icon" aria-hidden="true">🥇</span>
+            <span class="bento-value" data-content-key="about.bento.3.value">Winner</span>
+            <span class="bento-label" data-content-key="about.bento.3.label">TechSkills Forum 2026</span>
+          </div>
+
+          <!-- Location + Clock -->
+          <div class="bento-tile bento-location" role="figure" aria-label="Location: Giza, Egypt">
+            <span class="bento-location-icon" aria-hidden="true">📍</span>
+            <span class="bento-location-city" data-content-key="about.bento.4.city">Giza, Egypt</span>
+            <div class="bento-clock-wrap">
+              <span class="bento-clock-label" data-content-key="about.bento.4.clockLabel">CAIRO</span>
+              <div id="cairo-clock" class="bento-clock" aria-label="Local time in Cairo" aria-live="polite">
+                <span class="clock-time">00:00:00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Focus -->
+          <div class="bento-tile bento-focus" role="figure" aria-label="Current Focus">
+            <span class="bento-focus-label" data-content-key="about.bento.5.label">Current Focus</span>
+            <ul class="bento-focus-list" aria-label="Focus areas">
+              <li data-content-key="about.bento.5.items.0">C# &amp; ASP.NET Core</li>
+              <li data-content-key="about.bento.5.items.1">AI Automation Pipelines</li>
+              <li data-content-key="about.bento.5.items.2">Brand Strategy</li>
+              <li data-content-key="about.bento.5.items.3">Scaling Market Sphere X</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+         EXPERIENCE
+    ───────────────────────────────────────────── -->
+    <section id="experience" aria-labelledby="experience-heading">
+      <div class="section-inner">
+
+        <div class="section-eyebrow" aria-label="Section 03 — Experience">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          <span class="eyebrow-label" data-content-key="experience.eyebrow">03 — EXPERIENCE</span>
+        </div>
+
+        <span class="section-bg-number" aria-hidden="true">03</span>
+
+        <h2 id="experience-heading" class="section-heading">Experience</h2>
+
+        <div class="timeline-container" role="list">
+
+          <!-- Experience Item 1: Market Sphere X -->
+          <article class="timeline-item" role="listitem" aria-label="Founder and Team Leader at Market Sphere X Agency">
+            <div class="timeline-node" aria-hidden="true">
+              <span class="timeline-node-dot"></span>
+              <span class="timeline-node-line"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div class="timeline-meta">
+                  <span class="timeline-type-badge" data-content-key="experience.0.type">Work</span>
+                  <time class="timeline-period" data-content-key="experience.0.period">March 2024 – Present</time>
+                </div>
+                <h3 class="timeline-role" data-content-key="experience.0.role">Founder &amp; Team Leader</h3>
+                <p class="timeline-org" data-content-key="experience.0.org">Market Sphere X Agency</p>
+              </div>
+              <p class="timeline-description" data-content-key="experience.0.description">
+                Leads a cross-functional team covering web development, graphic design, video production,
+                photography, AI automation, business development and sales. Delivers websites, branding,
+                social media strategy and AI workflow automation for clients, primarily real estate companies in Egypt.
+              </p>
+              <ul class="timeline-highlights" aria-label="Highlights">
+                <li class="timeline-tag" data-content-key="experience.0.highlights.0">Team Size: [TEAM_SIZE]</li>
+                <li class="timeline-tag" data-content-key="experience.0.highlights.1">11 Clients</li>
+                <li class="timeline-tag" data-content-key="experience.0.highlights.2">Web Dev · Branding · AI Automation · Social Media Strategy</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Experience Item 2: EVA School -->
+          <article class="timeline-item" role="listitem" aria-label="Multiple roles at EVA International School of Applied Technology">
+            <div class="timeline-node" aria-hidden="true">
+              <span class="timeline-node-dot"></span>
+              <span class="timeline-node-line"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div class="timeline-meta">
+                  <span class="timeline-type-badge" data-content-key="experience.1.type">Education &amp; Work</span>
+                  <time class="timeline-period" data-content-key="experience.1.period">Ongoing</time>
+                </div>
+                <h3 class="timeline-role" data-content-key="experience.1.role">
+                  School Ambassador · PHP Team Leader · Peer Assistant · Student Professional Mentor
+                </h3>
+                <p class="timeline-org" data-content-key="experience.1.org">EVA International School of Applied Technology</p>
+              </div>
+              <p class="timeline-description" data-content-key="experience.1.description">
+                Supports 60+ students in technical and professional development. Leads PHP team,
+                assists peers and mentors fellow students in coding and career readiness.
+              </p>
+              <ul class="timeline-highlights" aria-label="Highlights">
+                <li class="timeline-tag" data-content-key="experience.1.highlights.0">60+ Students Mentored</li>
+                <li class="timeline-tag" data-content-key="experience.1.highlights.1">Technical &amp; Professional Development</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+         PROJECTS
+    ───────────────────────────────────────────── -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="section-inner">
+
+        <div class="section-eyebrow" aria-label="Section 04 — Projects">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          <span class="eyebrow-label" data-content-key="projects.eyebrow">04 — PROJECTS</span>
+        </div>
+
+        <span class="section-bg-number" aria-hidden="true">04</span>
+
+        <h2 id="projects-heading" class="section-heading">Projects</h2>
+
+        <div class="projects-grid">
+
+          <!-- Project 01: AI Lead Qualification Platform -->
+          <article
+            class="project-card"
+            data-gradient="blue-magenta"
+            data-content-key="projects.0"
+            aria-label="Project: AI Lead Qualification Platform"
+          >
+            <span class="project-number" aria-hidden="true" data-content-key="projects.0.number">01</span>
+            <div class="project-body">
+              <p class="project-category eyebrow-mono" data-content-key="projects.0.category">AI &amp; AUTOMATION</p>
+              <h3 class="project-title" data-content-key="projects.0.title">AI Lead Qualification Platform</h3>
+              <p class="project-description" data-content-key="projects.0.description">
+                An end-to-end pipeline integrating Claude AI, Make, Airtable and Telegram via webhooks.
+                Automatically scores and routes inbound leads, syncs CRM data, and generates tailored
+                proposals and emails — with one human approval step.
+              </p>
+              <ul class="tag-list" aria-label="Technologies used">
+                <li class="tag" data-content-key="projects.0.tags.0">Claude AI</li>
+                <li class="tag" data-content-key="projects.0.tags.1">Make</li>
+                <li class="tag" data-content-key="projects.0.tags.2">Airtable</li>
+                <li class="tag" data-content-key="projects.0.tags.3">Telegram</li>
+                <li class="tag" data-content-key="projects.0.tags.4">Webhooks</li>
+                <li class="tag" data-content-key="projects.0.tags.5">REST APIs</li>
+              </ul>
+            </div>
+            <div class="project-card-glow" aria-hidden="true"></div>
+          </article>
+
+          <!-- Project 02: SAKAN -->
+          <article
+            class="project-card"
+            data-gradient="magenta-orange"
+            data-content-key="projects.1"
+            aria-label="Project: SAKAN — Your Life, Your Way"
+          >
+            <span class="project-number" aria-hidden="true" data-content-key="projects.1.number">02</span>
+            <div class="project-body">
+              <p class="project-category eyebrow-mono" data-content-key="projects.1.category">BRAND &amp; MARKETING</p>
+              <h3 class="project-title" data-content-key="projects.1.title">SAKAN — Your Life, Your Way.</h3>
+              <p class="project-description" data-content-key="projects.1.description">
+                Student-focused platform concept combining accommodation discovery, study management,
+                personal finance management, daily life organization, and a proposed AI assistant —
+                for students living away from their families. Role: concept, audience analysis,
+                digital marketing strategy, brand identity, and social media campaigns.
+              </p>
+              <ul class="tag-list" aria-label="Disciplines">
+                <li class="tag">Brand Identity</li>
+                <li class="tag">Digital Marketing</li>
+                <li class="tag">Social Media Strategy</li>
+                <li class="tag">AI Concept</li>
+                <li class="tag">UX Research</li>
+              </ul>
+              <div class="award-badge" aria-label="1st Place — INNOVET III 2026">
+                <span aria-hidden="true">🏆</span> 1ST PLACE — INNOVET III 2026
+              </div>
+            </div>
+            <div class="project-card-glow" aria-hidden="true"></div>
+          </article>
+
+          <!-- Project 03: EVA School Digital Marketing -->
+          <article
+            class="project-card"
+            data-gradient="orange-yellow"
+            data-content-key="projects.2"
+            aria-label="Project: EVA School Digital Marketing Campaign"
+          >
+            <span class="project-number" aria-hidden="true" data-content-key="projects.2.number">03</span>
+            <div class="project-body">
+              <p class="project-category eyebrow-mono" data-content-key="projects.2.category">DIGITAL MARKETING</p>
+              <h3 class="project-title" data-content-key="projects.2.title">EVA School Digital Marketing Campaign</h3>
+              <p class="project-description" data-content-key="projects.2.description">
+                Developed and executed a comprehensive digital marketing strategy for EVA International
+                School — including audience segmentation, content calendars, social media management,
+                and performance analytics to drive student enrollment.
+              </p>
+              <ul class="tag-list" aria-label="Disciplines">
+                <li class="tag">Social Media</li>
+                <li class="tag">Content Strategy</li>
+                <li class="tag">Analytics</li>
+                <li class="tag">Paid Ads</li>
+                <li class="tag">Enrollment Funnel</li>
+              </ul>
+            </div>
+            <div class="project-card-glow" aria-hidden="true"></div>
+          </article>
+
+          <!-- Project 04: Real Estate AI Automation -->
+          <article
+            class="project-card"
+            data-gradient="blue-orange"
+            data-content-key="projects.3"
+            aria-label="Project: Real Estate Client AI Automation Suite"
+          >
+            <span class="project-number" aria-hidden="true" data-content-key="projects.3.number">04</span>
+            <div class="project-body">
+              <p class="project-category eyebrow-mono" data-content-key="projects.3.category">AI &amp; WEB DEV</p>
+              <h3 class="project-title" data-content-key="projects.3.title">Real Estate Client AI Automation Suite</h3>
+              <p class="project-description" data-content-key="projects.3.description">
+                Full-stack delivery for real estate clients in Egypt — combining custom web development
+                (landing pages, property showcases), brand identity packages, social media strategy,
+                and AI automation pipelines for lead handling and follow-up.
+              </p>
+              <ul class="tag-list" aria-label="Technologies and disciplines">
+                <li class="tag">Web Development</li>
+                <li class="tag">Branding</li>
+                <li class="tag">AI Automation</li>
+                <li class="tag">Social Media</li>
+                <li class="tag">Real Estate</li>
+              </ul>
+            </div>
+            <div class="project-card-glow" aria-hidden="true"></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+         ACHIEVEMENTS
+    ───────────────────────────────────────────── -->
+    <section id="achievements" aria-labelledby="achievements-heading">
+      <div class="section-inner">
+
+        <div class="section-eyebrow" aria-label="Section 05 — Achievements">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          <span class="eyebrow-label" data-content-key="achievements.eyebrow">05 — ACHIEVEMENTS</span>
+        </div>
+
+        <span class="section-bg-number" aria-hidden="true">05</span>
+
+        <h2 id="achievements-heading" class="section-heading">Achievements</h2>
+
+        <!-- INNOVET III Spotlight -->
+        <article
+          class="achievement-spotlight"
+          data-confetti="true"
+          aria-label="1st Place — INNOVET III 2026, Entrepreneurship Competition"
+        >
+          <!-- Shine overlay -->
+          <div class="shine-overlay" aria-hidden="true"></div>
+
+          <div class="achievement-spotlight-inner">
+            <!-- Badge -->
+            <div class="achievement-place-badge" aria-label="1st Place">
+              <span class="place-badge-rank" data-content-key="achievements.0.place">1ST PLACE</span>
+              <span class="place-badge-trophy" aria-hidden="true">🏆</span>
+            </div>
+
+            <div class="achievement-spotlight-body">
+              <p class="achievement-event-label eyebrow-mono" data-content-key="achievements.0.event">
+                INNOVET III — National Entrepreneurship &amp; Innovation Competition
+              </p>
+              <h3 class="achievement-title" data-content-key="achievements.0.title">
+                SAKAN — Your Life, Your Way.
+              </h3>
+              <dl class="achievement-meta">
+                <div class="achievement-meta-row">
+                  <dt>Date</dt>
+                  <dd data-content-key="achievements.0.date">2026</dd>
+                </div>
+                <div class="achievement-meta-row">
+                  <dt>Organizers</dt>
+                  <dd data-content-key="achievements.0.organizers">EVA International School of Applied Technology &amp; Innoventures</dd>
+                </div>
+                <div class="achievement-meta-row">
+                  <dt>Team</dt>
+                  <dd data-content-key="achievements.0.team">Amir Girgis Mofid, Mark Mounir, Kyrolos Alber, John Nabil, Mark Rafat, Mark Medhat, Fady Philip, Phelopater Hany</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </article>
+
+        <!-- TechSkills Forum Winner -->
+        <article
+          class="achievement-card glass-card"
+          aria-label="Winner — TechSkills Forum 2026"
+        >
+          <div class="achievement-place-badge achievement-place-badge--small" aria-label="Winner">
+            <span class="place-badge-rank" data-content-key="achievements.1.place">WINNER</span>
+            <span class="place-badge-trophy" aria-hidden="true">🥇</span>
+          </div>
+          <div class="achievement-card-body">
+            <p class="achievement-event-label eyebrow-mono" data-content-key="achievements.1.event">
+              TechSkills Forum 2026
+            </p>
+            <h3 class="achievement-title achievement-title--small" data-content-key="achievements.1.title">
+              Digital Marketing Competition
+            </h3>
+            <dl class="achievement-meta">
+              <div class="achievement-meta-row">
+                <dt>Date</dt>
+                <dd data-content-key="achievements.1.date"><!-- EDIT: exact dates of TechSkills Forum 2026 --> [TECHSKILLS_DATES]</dd>
+              </div>
+              <div class="achievement-meta-row">
+                <dt>Organizer</dt>
+                <dd data-content-key="achievements.1.organizer">TechSkills Forum</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+         VOLUNTEERING
+    ───────────────────────────────────────────── -->
+    <section id="volunteering" aria-labelledby="volunteering-heading">
+      <div class="section-inner">
+
+        <div class="section-eyebrow" aria-label="Section 06 — Volunteering">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          <span class="eyebrow-label" data-content-key="volunteering.eyebrow">06 — VOLUNTEERING</span>
+        </div>
+
+        <span class="section-bg-number" aria-hidden="true">06</span>
+
+        <h2 id="volunteering-heading" class="section-heading">Volunteering</h2>
+
+        <div class="timeline-container" role="list">
+
+          <!-- Volunteering Item 1 -->
+          <article class="timeline-item" role="listitem" aria-label="Peer Assistant and Student Professional Mentor at EVA">
+            <div class="timeline-node" aria-hidden="true">
+              <span class="timeline-node-dot"></span>
+              <span class="timeline-node-line"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div class="timeline-meta">
+                  <span class="timeline-type-badge">Volunteering</span>
+                  <time class="timeline-period" data-content-key="volunteering.0.period">Ongoing</time>
+                </div>
+                <h3 class="timeline-role" data-content-key="volunteering.0.role">Peer Assistant &amp; Student Professional Mentor</h3>
+                <p class="timeline-org" data-content-key="volunteering.0.org">EVA International School of Applied Technology</p>
+              </div>
+              <p class="timeline-description" data-content-key="volunteering.0.description">
+                Voluntarily supports peers with academic challenges, career guidance, and professional
+                development. Assists students in developing coding skills and preparing for real-world opportunities.
+              </p>
+              <ul class="timeline-highlights" aria-label="Highlights">
+                <li class="timeline-tag">60+ Students Supported</li>
+                <li class="timeline-tag">Career Mentorship</li>
+                <li class="timeline-tag">Technical Guidance</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Volunteering Item 2 -->
+          <article class="timeline-item" role="listitem" aria-label="School Ambassador at EVA">
+            <div class="timeline-node" aria-hidden="true">
+              <span class="timeline-node-dot"></span>
+              <span class="timeline-node-line"></span>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div class="timeline-meta">
+                  <span class="timeline-type-badge">Volunteering</span>
+                  <time class="timeline-period" data-content-key="volunteering.1.period">Ongoing</time>
+                </div>
+                <h3 class="timeline-role" data-content-key="volunteering.1.role">School Ambassador</h3>
+                <p class="timeline-org" data-content-key="volunteering.1.org">EVA International School of Applied Technology</p>
+              </div>
+              <p class="timeline-description" data-content-key="volunteering.1.description">
+                Represents the school at external events, open days and community outreach. Bridges
+                communication between the student body and school administration to improve campus life.
+              </p>
+              <ul class="timeline-highlights" aria-label="Highlights">
+                <li class="timeline-tag">Community Outreach</li>
+                <li class="timeline-tag">Student Representation</li>
+                <li class="timeline-tag">Event Participation</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+         SKILLS
+    ───────────────────────────────────────────── -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="section-inner">
+
+        <div class="section-eyebrow" aria-label="Section 07 — Skills">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          <span class="eyebrow-label" data-content-key="skills.eyebrow">07 — SKILLS</span>
+        </div>
+
+        <span class="section-bg-number" aria-hidden="true">07</span>
+
+        <h2 id="skills-heading" class="section-heading">Skills</h2>
+
+        <div class="skills-container">
+
+          <!-- Programming & Dev -->
+          <div class="skill-group" aria-labelledby="skill-group-dev">
+            <h3 id="skill-group-dev" class="skill-group-label" data-content-key="skills.groups.0.label">
+              Programming &amp; Development
+            </h3>
+            <ul class="tag-cloud" aria-label="Programming and development skills" role="list">
+              <li class="skill-chip">C#</li>
+              <li class="skill-chip">ASP.NET Core</li>
+              <li class="skill-chip">PHP</li>
+              <li class="skill-chip">HTML5</li>
+              <li class="skill-chip">CSS3</li>
+              <li class="skill-chip">JavaScript</li>
+              <li class="skill-chip">SQL</li>
+              <li class="skill-chip">REST APIs</li>
+              <li class="skill-chip">Git &amp; GitHub</li>
+              <li class="skill-chip">OOP</li>
+            </ul>
+          </div>
+
+          <!-- AI & Automation -->
+          <div class="skill-group" aria-labelledby="skill-group-ai">
+            <h3 id="skill-group-ai" class="skill-group-label" data-content-key="skills.groups.1.label">
+              AI &amp; Automation
+            </h3>
+            <ul class="tag-cloud" aria-label="AI and automation skills" role="list">
+              <li class="skill-chip">Claude AI</li>
+              <li class="skill-chip">Make (Integromat)</li>
+              <li class="skill-chip">Airtable</li>
+              <li class="skill-chip">Webhook Integration</li>
+              <li class="skill-chip">AI Prompt Engineering</li>
+              <li class="skill-chip">Automation Pipeline Design</li>
+              <li class="skill-chip">ChatGPT / LLMs</li>
+            </ul>
+          </div>
+
+          <!-- Digital Marketing -->
+          <div class="skill-group" aria-labelledby="skill-group-marketing">
+            <h3 id="skill-group-marketing" class="skill-group-label" data-content-key="skills.groups.2.label">
+              Digital Marketing
+            </h3>
+            <ul class="tag-cloud" aria-label="Digital marketing skills" role="list">
+              <li class="skill-chip">Social Media Strategy</li>
+              <li class="skill-chip">Content Marketing</li>
+              <li class="skill-chip">Brand Identity</li>
+              <li class="skill-chip">Meta Ads</li>
+              <li class="skill-chip">Google Ads</li>
+              <li class="skill-chip">SEO Fundamentals</li>
+              <li class="skill-chip">Email Marketing</li>
+              <li class="skill-chip">Analytics &amp; Reporting</li>
+              <li class="skill-chip">Audience Segmentation</li>
+            </ul>
+          </div>
+
+          <!-- Design & Media -->
+          <div class="skill-group" aria-labelledby="skill-group-design">
+            <h3 id="skill-group-design" class="skill-group-label" data-content-key="skills.groups.3.label">
+              Design &amp; Media
+            </h3>
+            <ul class="tag-cloud" aria-label="Design and media skills" role="list">
+              <li class="skill-chip">Adobe Photoshop</li>
+              <li class="skill-chip">Adobe Illustrator</li>
+              <li class="skill-chip">Adobe Premiere Pro</li>
+              <li class="skill-chip">Canva</li>
+              <li class="skill-chip">Video Production</li>
+              <li class="skill-chip">Photography Direction</li>
+              <li class="skill-chip">UI/UX Concepts</li>
+            </ul>
+          </div>
+
+          <!-- Business & Leadership -->
+          <div class="skill-group" aria-labelledby="skill-group-business">
+            <h3 id="skill-group-business" class="skill-group-label" data-content-key="skills.groups.4.label">
+              Business &amp; Leadership
+            </h3>
+            <ul class="tag-cloud" aria-label="Business and leadership skills" role="list">
+              <li class="skill-chip">Team Leadership</li>
+              <li class="skill-chip">Entrepreneurship</li>
+              <li class="skill-chip">Client Management</li>
+              <li class="skill-chip">Project Management</li>
+              <li class="skill-chip">Sales Strategy</li>
+              <li class="skill-chip">Business Development</li>
+              <li class="skill-chip">Public Speaking</li>
+              <li class="skill-chip">Mentoring</li>
+            </ul>
+          </div>
+
+          <!-- Languages -->
+          <div class="skill-group" aria-labelledby="skill-group-languages">
+            <h3 id="skill-group-languages" class="skill-group-label" data-content-key="skills.groups.5.label">
+              Languages
+            </h3>
+            <ul class="tag-cloud" aria-label="Languages" role="list">
+              <li class="skill-chip">Arabic — Native</li>
+              <li class="skill-chip">English — Professional</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+         EDUCATION
+    ───────────────────────────────────────────── -->
+    <section id="education" aria-labelledby="education-heading">
+      <div class="section-inner">
+
+        <div class="section-eyebrow" aria-label="Section 08 — Education">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          <span class="eyebrow-label" data-content-key="education.eyebrow">08 — EDUCATION</span>
+        </div>
+
+        <span class="section-bg-number" aria-hidden="true">08</span>
+
+        <h2 id="education-heading" class="section-heading">Education</h2>
+
+        <article class="education-card glass-card" aria-label="Education at EVA International School of Applied Technology">
+          <div class="education-card-inner">
+            <div class="education-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                <path d="M24 4L44 16V20H4V16L24 4Z" fill="url(#edu-grad)"/>
+                <rect x="8" y="20" width="32" height="20" rx="2" fill="url(#edu-grad)" opacity="0.7"/>
+                <rect x="20" y="32" width="8" height="8" rx="1" fill="white" opacity="0.9"/>
+                <defs>
+                  <linearGradient id="edu-grad" x1="4" y1="4" x2="44" y2="40">
+                    <stop offset="0%" stop-color="#3A5BFF"/>
+                    <stop offset="50%" stop-color="#FF2E93"/>
+                    <stop offset="100%" stop-color="#FF8A00"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="education-details">
+              <p class="education-eyebrow eyebrow-mono" data-content-key="education.0.type">Applied Technology Diploma</p>
+              <h3 class="education-degree" data-content-key="education.0.degree">
+                Software Development &amp; Digital Marketing
+              </h3>
+              <p class="education-institution" data-content-key="education.0.institution">
+                EVA International School of Applied Technology
+              </p>
+              <div class="education-meta-row">
+                <span class="education-badge" data-content-key="education.0.expected">
+                  <svg aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="14" height="12" rx="2"/><path d="M1 7h14"/><path d="M5 1v4M11 1v4"/></svg>
+                  Expected: 2027
+                </span>
+                <span class="education-badge education-badge--gold" data-content-key="education.0.scholarship">
+                  <svg aria-hidden="true" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 1l1.9 3.8 4.2.6-3 3 .7 4.2L8 10.5l-3.8 2.1.7-4.2-3-3 4.2-.6z"/></svg>
+                  Scholarship Recipient
+                </span>
+              </div>
+              <p class="education-scholarship-note" data-content-key="education.0.scholarshipNote">
+                Awarded a merit-based scholarship recognising academic performance, leadership, and entrepreneurial initiative.
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+         CONTACT
+    ───────────────────────────────────────────── -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="section-inner">
+
+        <div class="section-eyebrow" aria-label="Section — Contact">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          <span class="eyebrow-label" data-content-key="contact.eyebrow">GET IN TOUCH</span>
+        </div>
+
+        <!-- Giant split-word headline -->
+        <h2 id="contact-heading" class="contact-heading" aria-label="Let's build something impactful">
+          <span class="contact-heading-word contact-heading-outline" data-content-key="contact.headline.0">LET'S</span>
+          <span class="contact-heading-word contact-heading-fill" data-content-key="contact.headline.1">BUILD</span>
+          <span class="contact-heading-word contact-heading-outline" data-content-key="contact.headline.2">SOMETHING</span>
+          <span class="contact-heading-word contact-heading-fill" data-content-key="contact.headline.3">IMPACTFUL</span>
+        </h2>
+
+        <div class="contact-layout">
+
+          <!-- Contact Links -->
+          <div class="contact-links" role="group" aria-label="Contact methods">
+            <a
+              href="mailto:amirgargas28@gmail.com"
+              class="contact-link-btn"
+              aria-label="Send email to Amir Girgis Mofid"
+              data-content-key="contact.links.0.label"
+            >
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>amirgargas28@gmail.com</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/amir-girgis/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link-btn"
+              aria-label="Connect with Amir on LinkedIn (opens in new tab)"
+              data-content-key="contact.links.1.label"
+            >
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/amirgirgis"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-link-btn"
+              aria-label="View Amir's GitHub profile (opens in new tab)"
+              data-content-key="contact.links.2.label"
+            >
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <span>GitHub</span>
+            </a>
+            <p class="contact-phone" aria-label="Phone number">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44a2 2 0 0 1 1.95-2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.09 6.09l1.82-1.82a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span data-content-key="contact.phone">+20 XXX XXX XXXX</span>
+            </p>
+          </div>
+
+          <!-- Contact Form -->
+          <form
+            class="contact-form glass-card"
+            action="mailto:amirgargas28@gmail.com"
+            method="GET"
+            enctype="text/plain"
+            aria-label="Send a message to Amir Girgis Mofid"
+          >
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                class="form-input"
+                placeholder="e.g. Jane Smith"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Your Email</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                class="form-input"
+                placeholder="jane@example.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea
+                id="contact-message"
+                name="body"
+                class="form-textarea"
+                rows="5"
+                placeholder="Tell me about your project or opportunity..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-form-submit" aria-label="Send message">
+              <span>SEND MESSAGE</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer" id="footer-slot">
-    <!-- Injected dynamically from content.js -->
+  <!-- ═══════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-inner">
+
+      <!-- Giant Outlined Name -->
+      <p class="footer-name-outline" aria-label="Amir Girgis Mofid">
+        <span aria-hidden="true">AMIR GIRGIS MOFID</span>
+      </p>
+
+      <div class="footer-bottom">
+        <!-- Live Clock -->
+        <div id="footer-clock" class="footer-clock" aria-label="Current time" aria-live="polite">
+          <span class="footer-clock-label">Cairo</span>
+          <span class="footer-clock-time">00:00:00</span>
+        </div>
+
+        <!-- Copyright -->
+        <p class="footer-copy" aria-label="Copyright">
+          <span aria-hidden="true">©</span>
+          <span id="footer-year">2026</span>
+          Amir Girgis Mofid. Crafted with intention.
+        </p>
+
+        <!-- Back to Top -->
+        <a href="#hero" class="btn-back-top" aria-label="Back to top of page">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+          <span>Top</span>
+        </a>
+      </div>
+
+    </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- ═══════════════════════════════════════════════════
+       SCRIPTS
+  ═══════════════════════════════════════════════════ -->
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <!-- Content Data -->
   <script src="js/content.js"></script>
+  <!-- App Logic -->
   <script src="js/app.js"></script>
+
 </body>
 </html>
