@@ -22,7 +22,7 @@ window.PORTFOLIO_CONTENT = {
     avatarPath: "assets/amir.jpg",
     avatarAlt: "Portrait of Amir Girgis Mofid",
     avatarFallbackInitials: "AG",
-    cvPath: "Amir_Girgis_CV.pdf",
+    cvPath: "/Amir_Girgis_CV.pdf",
     brandMark: "AGM"
   },
 
@@ -63,7 +63,7 @@ window.PORTFOLIO_CONTENT = {
     valueStatement: "Builder at the intersection of code, marketing and leadership.",
     ctas: {
       primary: { label: "View Projects", href: "#projects" },
-      secondary: { label: "Download CV", href: "Amir_Girgis_CV.pdf", isDownload: true },
+      secondary: { label: "Download CV", href: "/Amir_Girgis_CV.pdf", isDownload: true },
       tertiary: { label: "Contact Me", href: "#contact" }
     },
     quickMetrics: [
